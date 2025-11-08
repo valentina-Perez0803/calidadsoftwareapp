@@ -34,7 +34,7 @@ function calculateScore(metrics) {
 }
 
 export default function App() {
-  const [projectName, setProjectName] = useState("Aplicativo educativo de ejemplo");
+  const [projectName, setProjectName] = useState("");
   const [metrics, setMetrics] = useState(DEFAULT_METRICS);
   const [notes, setNotes] = useState("");
   const [evaluations, setEvaluations] = useState([]);
@@ -360,7 +360,7 @@ export default function App() {
 
               <div>
                 <label className="block text-sm font-medium">Nombre del proyecto</label>
-                <input value={projectName} onChange={(e) => setProjectName(e.target.value)} className="w-full p-2 border rounded mt-1" />
+                <input value={projectName} onChange={(e) => setProjectName(e.target.value)} placeholder="Nombre del aplicativo a evaluar" className="w-full p-2 border rounded mt-1" />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
