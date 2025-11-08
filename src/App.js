@@ -45,6 +45,9 @@ export default function App() {
     enlacePublico: false,
   });
 
+  // Agrega esta línea solo para evitar la advertencia temporalmente
+  console.log(setChecklist);
+
   // Load saved evaluations from localStorage at start
   useEffect(() => {
     try {
