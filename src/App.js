@@ -182,6 +182,8 @@ export default function App() {
         </p>
          <p className="mb-2">
             <ul>
+              <strong>✅ ISO/IEC 25000 (SQuaRE)</strong><li> Define modelos de calidad y métricas.</li>
+              <br></br>
               <strong>✅ ISO/IEC 25010 (Modelo de Calidad de Producto)</strong><li> Define ocho características principales de calidad de software:
               Adecuación funcional, Fiabilidad, Usabilidad, Eficiencia del rendimiento, Mantenibilidad, Portabilidad, Compatibilidad y Seguridad</li>
               <br></br>
@@ -213,6 +215,8 @@ export default function App() {
         </p>
          <p className="mb-2">
             <ul>
+              <strong>🧠 Modelo CMMI (CapabilityMaturity Model Integration)</strong><li> mide el nivel de madurez de los procesos de software.</li>
+              <br></br>
               <strong>🧱 Modelo de McCall (1977)</strong><li> Agrupa la calidad en tres grandes categorías:</li>
               <li><strong>• Operación del producto:</strong> Corrección, fiabilidad, eficiencia, integridad, usabilidad.</li>
               <li><strong>• Revisión del producto:</strong> Mantenibilidad, flexibilidad, testabilidad.</li>
@@ -230,6 +234,7 @@ export default function App() {
               <br></br>
               <strong>🌐 Modelo ISO/IEC 25010</strong><li> El más actualizado, utilizado hoy como referencia mundial, tanto 
               en proyectos de desarrollo como en auditorías de calidad de software.</li>
+              <strong>⛓️ ISO/IEC 9126</strong><li> define las características de calidad del software y sus métricas.</li>
             </ul>
         </p>
         </section>
@@ -247,6 +252,7 @@ export default function App() {
             <ul>
               <li><strong>• ISO/IEC 90003:</strong> Guía para aplicar la norma ISO 9001 específicamente al software.</li>
               <li><strong>• IEEE 829:</strong> Estándar para documentación de pruebas de software.</li>
+              <li><strong>• ISO/IEC 12207:</strong> Define el ciclo de vida del software.</li>
               <li><strong>• IEEE 730:</strong> Estándar para la planificación y aseguramiento de calidad de software.</li>
               <li><strong>• ISO/IEC 25000 (SQuaRE):</strong> Marco que reúne estándares relacionados con la evaluación de la calidad del software.</li>
             </ul>
