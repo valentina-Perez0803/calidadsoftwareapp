@@ -215,7 +215,7 @@ export default function App() {
         </p>
          <p className="mb-2">
             <ul>
-              <strong>🧠 Modelo CMMI (CapabilityMaturity Model Integration)</strong><li> mide el nivel de madurez de los procesos de software.</li>
+              <strong>🧠 Modelo CMMI (CapabilityMaturity Model Integration)</strong><li> Mide el nivel de madurez de los procesos de software.</li>
               <br></br>
               <strong>🧱 Modelo de McCall (1977)</strong><li> Agrupa la calidad en tres grandes categorías:</li>
               <li><strong>• Operación del producto:</strong> Corrección, fiabilidad, eficiencia, integridad, usabilidad.</li>
