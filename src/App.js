@@ -282,9 +282,9 @@ export default function App() {
     <div className="min-h-screen bg-slate-50 text-slate-800">
       <header className="bg-sky-700 text-white shadow">
         <div className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
-          <div>
-            <h1 className="text-2xl font-extrabold">CALIDAD DE SOFTWARE</h1>
-            <p className="text-sm opacity-90">Normas, Modelos, Estándares y Evaluación</p>
+          <div onClick={() => setActiveTab("inicio")} className="cursor-pointer text-center select-none">
+            <h1 className="text-2xl font-extrabold hover:text-sky-600 transition">CALIDAD DE SOFTWARE</h1>
+            <p className="text-sm opacity-90 hover:text-sky-500 transition">Normas, Modelos, Estándares y Evaluación</p>
           </div>
           <nav className="flex flex-wrap justify-center lg:justify-end gap-2 mt-4 lg:mt-0">
             <button onClick={() => setActiveTab("inicio")} className={`px-3 py-1 rounded ${activeTab==="inicio" ? "bg-white text-sky-700 font-semibold" : "bg-white/10"}`}>Inicio</button>
@@ -306,21 +306,29 @@ export default function App() {
               <p className="mb-4">Este aplicativo presenta las normas, modelos y un prototipo práctico de evaluación cuantitativa de calidad del software. Usa las pestañas en el encabezado para navegar o baja para evaluar un aplicativo.</p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="border rounded p-4">
-                  <h3 className="font-semibold">Normas</h3>
-                  <p className="text-sm text-gray-600 mt-2">ISO/IEC 25010, IEEE — Definen atributos y criterios de calidad.</p>
+                <div onClick={() => setActiveTab("normas")} className="border rounded p-4 cursor-pointer hover:bg-sky-50 transition">
+                  <h3 className="font-semibold text-sky-700">Normas</h3>
+                  <p className="text-sm text-gray-600 mt-2">
+                    ISO/IEC 25010, IEEE — Definen atributos y criterios de calidad.
+                  </p>
                 </div>
-                <div className="border rounded p-4">
-                  <h3 className="font-semibold">Modelos</h3>
-                  <p className="text-sm text-gray-600 mt-2">ISO 9126/25010, CMMI — Para evaluar procesos y calidad.</p>
+                <div onClick={() => setActiveTab("modelos")} className="border rounded p-4 cursor-pointer hover:bg-sky-50 transition">
+                  <h3 className="font-semibold text-sky-700">Modelos</h3>
+                  <p className="text-sm text-gray-600 mt-2">
+                    ISO 9126/25010, CMMI — Para evaluar procesos y calidad.
+                  </p>
                 </div>
-                <div className="border rounded p-4">
-                  <h3 className="font-semibold">Estándares</h3>
-                  <p className="text-sm text-gray-600 mt-2">Convenciones de código, documentación y pruebas.</p>
+                <div onClick={() => setActiveTab("estandares")} className="border rounded p-4 cursor-pointer hover:bg-sky-50 transition">
+                  <h3 className="font-semibold text-sky-700">Estándares</h3>
+                  <p className="text-sm text-gray-600 mt-2">
+                    Convenciones de código, documentación y pruebas.
+                  </p>
                 </div>
-                <div className="border rounded p-4">
-                  <h3 className="font-semibold">Pruebas y evaluación</h3>
-                  <p className="text-sm text-gray-600 mt-2">Prototipo de evaluación y métricas cuantitativas para validar la calidad del software.</p>
+                <div onClick={() => setActiveTab("evaluacion")} className="border rounded p-4 cursor-pointer hover:bg-sky-50 transition">
+                  <h3 className="font-semibold text-sky-700">Pruebas y evaluación</h3>
+                  <p className="text-sm text-gray-600 mt-2">
+                    Prototipo de evaluación y métricas cuantitativas para validar la calidad del software.
+                  </p>
                 </div>
               </div>
             </article>
