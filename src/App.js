@@ -137,6 +137,7 @@ export default function App() {
   const contenidos = {
     calidad: (
       <>
+        <section className="p-4 text-justify">
         <p className="mb-2">
         Calidad de software es el grado en que un producto de software cumple con los requisitos funcionales y no funcionales establecidos, y
         satisface las necesidades y expectativas del cliente o usuario final.
@@ -166,10 +167,12 @@ export default function App() {
               <li>• Reducción de costes y tiempo: a largo plazo, buen diseño y calidad evitan retrabajos y grabes problemas.</li>
             </ul>
         </p>
+        </section>
       </>
     ),
     normas: (
       <>
+        <section className="p-4 text-justify">
         <p className="mb-2" class="APP">
         Las normas son marcos internacionales que definen criterios, procesos y características para garantizar la calidad del software y
         de los procesos que lo desarrollan.
@@ -196,10 +199,12 @@ export default function App() {
               procesos de una organización estén controlados y orientados a la mejora continua.</li>
             </ul>
         </p>
+      </section>
       </>
     ),
     modelos: (
       <>
+        <section className="p-4 text-justify">
         <p className="mb-2" class="APP">
         Los modelos de calidad proporcionan marcos conceptuales que ayudan a evaluar y mejorar los productos de software.
         </p>
@@ -227,6 +232,7 @@ export default function App() {
               en proyectos de desarrollo como en auditorías de calidad de software.</li>
             </ul>
         </p>
+        </section>
       </>
     ),
     estandares: (
@@ -245,6 +251,7 @@ export default function App() {
               <li><strong>• ISO/IEC 25000 (SQuaRE):</strong> Marco que reúne estándares relacionados con la evaluación de la calidad del software.</li>
             </ul>
         </p>
+        <br></br>
         <p className="text-sm text-gray-600">NOTA: Mantener estándares ayuda en mantenibilidad y colaboración del equipo.</p>
       </>
     ),
@@ -279,7 +286,7 @@ export default function App() {
             <h1 className="text-2xl font-extrabold">CALIDAD DE SOFTWARE</h1>
             <p className="text-sm opacity-90">Normas, Modelos, Estándares y Evaluación</p>
           </div>
-          <nav className="space-x-2">
+          <nav className="flex flex-wrap justify-center lg:justify-end gap-2 mt-4 lg:mt-0">
             <button onClick={() => setActiveTab("inicio")} className={`px-3 py-1 rounded ${activeTab==="inicio" ? "bg-white text-sky-700 font-semibold" : "bg-white/10"}`}>Inicio</button>
             <button onClick={() => setActiveTab("calidad")} className={`px-3 py-1 rounded ${activeTab==="calidad" ? "bg-white text-sky-700 font-semibold" : "bg-white/10"}`}>Calidad de Software</button>
             <button onClick={() => setActiveTab("normas")} className={`px-3 py-1 rounded ${activeTab==="normas" ? "bg-white text-sky-700 font-semibold" : "bg-white/10"}`}>Normas</button>
@@ -290,7 +297,7 @@ export default function App() {
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 py-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Left column: content sections */}
         <section className="lg:col-span-2 space-y-6">
           {activeTab === "inicio" && (
@@ -413,7 +420,7 @@ export default function App() {
         </section>
 
         {/* Right column: evaluations + quick info */}
-        <aside className="space-y-4">
+        <aside className="space-y-4 lg:col-span-1 order-first lg:order-last">
           <div className="bg-white p-4 rounded-2xl shadow">
             <h3 className="font-semibold">Evaluaciones guardadas</h3>
             {evaluations.length === 0 ? (
